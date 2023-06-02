@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>lesson 14</h1>
+
+    <script>
+
+        var marks=parseInt(prompt("enter your marks ",33))
+        console.log("your marks is ", marks)
+
+        var result = marks<=33? "you are fail" :(marks<=50 && marks>33) ? " your grade is c " :(marks<=70 && marks>50) ? " your grade is b" : (marks<=100 && marks>70) ? "your grade is A": "invalid marks";
+            document.write("result : ",result)
+
+    </script>
+</body>
+</html>
