@@ -1,0 +1,21 @@
+
+1) Write a C program to calculate final electricity bill based upon below given criteria. take monthly electricity unit from user as input. 
+units           price  per unit 
+<100            1
+>100 & <200     2 
+>200 & <300     3
+>300 & <400     4
+>400            5
+
+
+2)get two value from user and give option for user
+if select 
+         1 for addition 
+         2 for subtraction
+         3 for multiplication
+         4 for division
+         5 for modulas
+
+3) Write a program to display zodiac symbol & given zodiac sign from given birth day and month as per following criteria.
+https://in.pinterest.com/pin/81698180718875314/
+
