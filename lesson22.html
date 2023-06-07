@@ -7,10 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 class="name"></h1>
+
+    <div class="name"></div>
     <script>
-        prompt(`
-         `)
+        document.getElementsByClassName("name")[0].innerHTML=" 0 index class"
+         document.getElementsByClassName("name")[1].innerHTML = " 1 index class"
+        var num= document.getElementsByClassName("name").length;
+        console.log(num)
     </script>
 </body>
 </html>
