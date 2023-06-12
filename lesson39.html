@@ -15,29 +15,30 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Default arguments in functions.</h1>
+<h1>arrow function</h1>
+
             </div>
         </div>
     </div>
 
     <script>
+        var number1=parseInt(prompt("Enter number 1"))
+        var number2=parseInt(prompt("Enter number 2"))
 
 
-    var number1 = parseInt(prompt("Enter number1"))
-    var number2 = parseInt(prompt("Enter number2"))
-
-
-          function show()
-          {
-
-            console.log(number1)
-            number1+=5
-            console.log(number2)
-            number2-=2
-        }
-        show()
-        console.log(number1)
-        console.log(number2)
+        let Add= (num1,num2)=> num1+num2;
+        let Sub =(num1,num2)=> num1-num2;
+        let Mul =(num1,num2)=> num1*num2;
+        let Div =(num1,num2=2)=> num1 /num2;
+        // Add(10,20)
+     var ans=  Add(number1,number2)
+        console.log(ans)
+      ans =Sub(number1,number2)
+      console.log(ans)  
+      ans =Mul(number1,number2)
+      console.log(ans)  
+      ans =Div(number1)
+      console.log(ans)  
 
 
 
