@@ -15,17 +15,28 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-
+                <h1>Default arguments in functions.</h1>
             </div>
         </div>
     </div>
 
- <script>
-
-     
+    <script>
 
 
- </script>
+    var number1 = parseInt(prompt("Enter number1"))
+    var number2 = parseInt(prompt("Enter number2"))
+
+
+           function show (number1, number2=1)
+           {
+            console.log(number1)
+            console.log(number2)
+           }
+           show(number1)
+
+
+
+    </script>
 
 
 
