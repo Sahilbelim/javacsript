@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="col-6 offset-3 mt-5">
+                <div class="card border-success">
+                    <div class="card-body">
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control border-success" id="lenth" placeholder="">
+                            <label for="lenth" class="text-success">Enter lenth</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control border-success" id="height" placeholder="">
+                            <label for="height" class="text-success">Enter height</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control border-success" id="width" placeholder="">
+                            <label for="width" class="text-success">Enter width</label>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-success " id="btn">OK</button>
+                            <button class="btn btn-success " id="output">Answer  </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+      var lenth = document.querySelector("#lenth")
+      var height= document.querySelector("#height") 
+      var width = document.querySelector("#width")  
+      var btn = document.querySelector("#btn")
+      var lenth_value= parseInt(lenth.value)
+     var height_value = parseInt(height.value)
+     var width_value = parseInt(width.value)
+     var answer
+     lenth.onchange=function()   
+     {
+        lenth_value=parseInt(lenth.value)
+        console.log(lenth_value)
+     }
+     height.onchange = function () {
+            height_value = parseInt(height.value)
+            console.log(height_value)
+        }
+    width.onchange = function () {
+            width_value = parseInt(width.value)
+            console.log(width_value)
+        }  
+    btn.onclick=function()
+    {
+        // answer=lenth_value*height_value*width_value;
+        answer= check(lenth_value, height_value, width_value)
+        document.querySelector('#output').innerHTML="Answer :"+answer;
+    }      
+    
+      function check (len,hei=0,wid=0)
+      {
+        if (len!=''&&hei!= 0 && wid!=0)
+        {
+            return (len*hei*wid);
+        }
+       else if (len != '' && hei != ''&& wid==0) {
+              return (len * hei );
+          }
+      }
+     
+
+
+    
+
+
+    </script>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
