@@ -67,19 +67,24 @@
         // answer=lenth_value*height_value*width_value;
         answer= check(lenth_value, height_value, width_value)
         document.querySelector('#output').innerHTML="Answer :"+answer;
+        
     }      
     
-      function check (len,hei=0,wid=0)
+      function check (len,hei,wid)
       {
         if (len!=''&&hei!= 0 && wid!=0)
         {
-            return (len*hei*wid);
+          alert( mul(len*hei*wid))
         }
-       else if (len != '' && hei != ''&& wid==0) {
-              return (len * hei );
+       else if (len != '' && hei != '') {
+            alert(mul(len * hei))
           }
       }
-     
+     function mul(len,hei=1,wid=1)
+     {
+
+        return len*hei*wid;
+     }
 
 
     

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main
+        {
+           margin:500px;
+            width: 500px;
+            height: 500px;
+            
+            background-color: aqua;
+        }
+        #sub
+        {  
+             margin:100px;
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+        }
+        #child{
+           margin: 0px;
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+        <div id="main">
+
+            <div id="sub">
+
+                <div id="child">
+
+                </div>
+            </div>
+        </div>
+
+    <script>
+        var main =document.querySelector("#main");
+        var sub =document.querySelector("#sub");
+        var child =document.querySelector("#child");
+
+        main.addEventListener("click",function()
+        {
+            alert("main call...")
+        },true);
+        sub.addEventListener("click",function()
+        {
+             alert("sub call...")
+        },true);
+        child.addEventListener("click",function()
+        {
+             alert("child call...")
+        },true);
+
+
+
+    </script>
+</body>
+</html>

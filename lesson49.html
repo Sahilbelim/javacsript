@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> creating object to second method </h1>
+    <h4>open console</h4>
+
+
+
+    <script>
+                var car = new Object({
+                    name:"car-name",
+                    price:0,
+                    company:"",
+                    variant:"",
+                    show : function()
+                    {
+                        console.log("show function called....");
+                        console.log(car.name  ,car.price)
+                    }
+                    
+
+                });
+                 car.show()
+                // console.log(car)
+                car.price=45000000;
+                car.show()
+
+    </script>
+</body>
+</html>

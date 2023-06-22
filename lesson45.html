@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+            function student()
+            {
+                this.name= " ",
+                this.rollno=0,
+                this.marks=0,
+                this.std=0
+                this.result = function()
+                {
+                    console.log( this.name , this.rollno);
+                }
+
+            }
+
+            student1 = new student();
+            student1.name="sahil";
+            // student.detail();
+            student1.result();
+            console.log(student1);   
+            student2 = new student()
+            console.log(student2); 
+    </script>
+</body>
+</html>

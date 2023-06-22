@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="col-6 offset-3 mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="">
+                            <label for="name">name</label>
+                        </div>
+                        <div class="form-floating  mt-3">
+                            <input type="number" class="form-control" id="std" placeholder="">
+                            <label for="std">std</label>
+                        </div>
+                        <div class="form-floating mt-3">
+                            <input type="number" class="form-control" id="marks" placeholder="">
+                            <label for="std">marks</label>
+                        </div>
+                        <div class="form-floating mt-3">
+                            <input type="number" class="form-control" id="result" placeholder="">
+                            <label for="std">result</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 offset-3 mt-5">
+                <div class="card shadow ">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">RollNo</th>
+                                    <th scope="col">Name </th>
+                                    <th scope="col">std</th>
+                                    <th scope="col">Marks</th>
+                                    <th scope="col">Result</th>
+                                </tr>
+                            </thead>
+                            <tbody id="rows">
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td id="name1"></td>
+                                    <td id="std1"></td>
+                                    <td id="marks1"></td>
+                                    <td id="result1"></td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+
+        var student = function () {
+
+            this.name = document.getElementById("name").value,
+                this.std =  document.getElementById("std").value,
+                this.marks =  document.getElementById("marks").value,
+                this.result =  document.getElementById("result").value
+
+            this.show = function () {
+                // document.getElementById("name1").innerHTML = this.name
+                // document.getElementById("std1").innerHTML = this.std
+                // document.getElementById("marks1").innerHTML = this.marks
+                // document.getElementById("result1").innerHTML = this.result
+                document.getElementById("rows").innerHTML+=`<tr>
+                                    <th scope="row">1</th>
+                                    <td >${this.name}</td>
+                                    <td >${this.std}</td>
+                                    <td >${this.marks}</td>
+                                    <td >${this.result}</td>
+                                </tr>`;
+            }
+
+        }
+
+        student1 = new student();
+        student2=new student();
+        console.log(student2);
+        student1.show();
+        student2.show();
+
+
+
+    </script>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
