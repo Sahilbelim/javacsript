@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>ES6 way to create class</h1>
+
+
+    <script>
+        class car {
+            constructor(name,color,type,company)
+            {
+                this.name=name,
+                this.color=color,
+                this.type=type,
+                this.company=company
+            }
+            show()
+            {
+                console.log(this.name ,this.color ,this.type , this.company )
+            }
+            go()
+            {
+                
+            }
+
+        }
+
+        var car1 =new  car("supra","white","pretrol","toyota")
+        console.log(car1);
+        car1.show()
+
+        const car2 = new car("gtr","blue","pretrol","nissan")
+        console.log(car2);
+        car2.show()
+
+    </script>
+</body>
+</html>

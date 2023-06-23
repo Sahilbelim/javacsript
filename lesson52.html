@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>
+    inheritance in class 
+</h1>
+
+
+
+    <script>
+
+           class teacher
+        {
+
+            constructor(name)
+            {
+                this.name=name
+            }
+            write()
+            {
+                console.log("i am ", this.name, " i can write  ");
+            }
+            read()
+            {
+                console.log("i am ", this.name, "i can read  ");
+
+            }
+            walk()
+            {
+                console.log("i am ", this.name, "i can walk ");
+            }
+        }
+
+        class student extends teacher
+        {
+
+            constructor(name)
+            {
+                super(name);
+                this.name=name
+            }
+           
+            run()
+            {
+                console.log("i am ", this.name ," i can run");
+            }
+        }
+
+ var student1= new student("viraj ")   ;
+ 
+ student1.run()    
+ student1.walk()
+ student1.read()
+ student1.write()
+
+
+    </script>
+</body>
+</html>
