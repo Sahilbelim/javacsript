@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>
+        check whether property exist or not
+    </h1>
+
+
+
+    <script>
+
+        class teacher {
+
+            constructor(name) {
+                this.name = name
+            }
+            write() {
+                console.log("i am ", this.name, " i can write  ");
+            }
+            read() {
+                console.log("i am ", this.name, "i can read  ");
+
+            }
+            walk=()=> {
+                console.log("i am ", this.name, "i can walk ");
+            }
+        }
+
+        t1=new teacher( "viraj ");
+        t1.write();
+        t1.read();
+        t1.walk()
+
+        if(t1.write==undefined)
+        {
+            alert(" write methode not exist");
+        }
+         if(t1.talk==undefined)
+        {
+            alert(" talk methode not exist");
+
+        }
+
+        let student ={
+            name:"name",
+            age:10
+        }
+        alert("name" in student);
+        alert("gender" in student);
+
+
+    </script>
+</body>
+
+</html>

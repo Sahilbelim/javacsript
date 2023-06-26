@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>
+       multilevel  inheritance in class
+    </h1>
+
+
+
+    <script>
+
+        class principal {
+
+            constructor(name)
+            {
+                this.name=name
+            }
+            pass()
+            {
+                console.log(this.name ," is pass");
+            }
+            fail()
+            {
+                console.log(this.name," is fail");
+            }
+        }
+
+        class teacher extends principal {
+
+            constructor(name) {
+                super(name);
+                this.name = name
+            }
+            write() {
+                console.log("i am ", this.name, " i can write  ");
+            }
+            read() {
+                console.log("i am ", this.name, "i can read  ");
+
+            }
+            walk() {
+                console.log("i am ", this.name, "i can walk ");
+            }
+        }
+
+        class student extends teacher {
+
+            constructor(name) {
+                super(name);
+                this.name = name
+            }
+
+            run() {
+                console.log("i am ", this.name, " i can run");
+            }
+        }
+
+        var student1 = new student("viraj ");
+
+        student1.run()
+        student1.walk()
+        student1.read()
+        student1.write()
+        var teacher1= new teacher("viraj")
+        teacher1.write()
+        teacher1.pass()
+        student1.fail()
+        
+
+
+    </script>
+</body>
+
+</html>
