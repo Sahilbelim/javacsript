@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> array in object with map</h1>
+    <div id="output"></div>
+
+
+    <script>
+
+        var output = document.getElementById("output");
+        var users = [
+            {
+                name: "sahil",
+                age: 18,
+                weight: 45.36
+            },
+            {
+                name: "viraj",
+                age: 18,
+                weight: 45.36
+            },
+            {
+                name: "param",
+                age: 18,
+                weight: 45.36
+            },
+            {
+                name: "sahal",
+                age: 18,
+                weight: 45.36
+            },
+        ];
+
+        // console.log(users[0].name)
+        // console.log(users[1].name)
+        // console.log(users[2])
+        // console.log(users[3])
+
+        users.map(function (user, index, array) {
+         console.log(`name is ${user.name} , age is ${user.age} , weight is ${user.weight}  `);
+            output.innerHTML += `name is ${user.name} <br> age is ${user.age} <br> weigh is   ${user.weight} <br> `
+            console.log(index);//get index of arry
+            console.log(array);//get full array
+            // console.log(this)
+        })
+
+
+
+    </script>
+</body>
+
+</html>
