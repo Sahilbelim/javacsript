@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="container mt-5">
+        <div class="row mt-5" id="cards">
+           
+            
+        </div>
+    </div>
+
+    <script>
+
+
+    var cards = document.getElementById("cards");  
+    
+    var users =[
+
+    {
+        no:1,
+        name:"viraj",
+        age:18,
+        weight:40.36,
+    },
+    {
+        no: 2,
+        name: "sahil",
+        age: 18,
+        weight: 45.36,
+    },
+    {
+        no: 3,
+        name: "param",
+        age: 19,
+        weight: 48.36,
+    }
+    ,
+        {
+            no: 4,
+            name: "sahil",
+            age: 18,
+            weight: 45.36,
+        }
+        ,
+        {
+            no: 5,
+            name: "sahil",
+            age: 18,
+            weight: 45.36,
+        }
+        ,
+        {
+            no: 6,
+            name: "sahil",
+            age: 18,
+            weight: 45.36,
+        }
+];
+
+    users.map(function(us)
+    {
+        // console.log(us.no);
+        // console.log(us.name);
+        // console.log(us.age);
+        // console.log(us.weight);
+
+       
+
+            cards.innerHTML+= ` <div class="col-4 mt-2">
+                <div class="card">
+                    <div class="card-header"><h4>No.${us.no} </h4></div>
+                    <div class="card-body"> 
+                        <div class="card-title">user ${us.no}</div>
+                        <p>
+                            Name : ${us.name}  <br>
+                            age : ${us.age}    <br>
+                            weigh:   ${us.weight}  <br>
+                        </p>
+                    </div>
+                </div>
+
+                
+            </div>`;
+    })
+    
+
+
+
+
+
+    </script>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
