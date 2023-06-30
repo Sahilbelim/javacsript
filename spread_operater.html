@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>spread operator </h1>
+
+
+
+    <script>
+        
+        var object_1=
+        {
+            name:"user",
+            age:18,
+            weight:45.36
+
+        }
+      var object_2=
+      {
+        name:"viraj",
+        gender:true,
+        number:8574962541
+      }
+
+      var object_3={...object_1,...object_2}
+      console.log(object_3);
+
+   
+    
+    
+      var array1=["user1", "user2", "user3","user4","user5"];
+    //   console.log(array1);
+      var array2=["user1", "user7", "user6","user9","user8"];
+    //   console.log(array2);
+
+      var array3=[...array1,...array2];
+      console.log(array3)
+      
+    </script>
+</body>
+</html>
