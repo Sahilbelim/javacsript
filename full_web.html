@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide  ">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/1200/500?1" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1200/500?2" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1200/500?3" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="row" id="card_1">
+
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div id="form_ok">
+                   
+
+                </div>
+            </div>
+            <div class="col-8 offset-2">
+
+                <div class="card">
+                    <form>
+                        <div class="card-body">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="email" required>
+                                <label for="email">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="password" placeholder="Password"
+                                    required>
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="confirmpassword"
+                                    placeholder="confirmPassword" required>
+                                <label for="confirmpassword">confirm Password</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="number" placeholder="number " required>
+                                <label for="number">number</label>
+                            </div>
+                            <input type="button" onclick="Submit()" class="btn btn-primary" value="submit" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script>
+
+
+        var password = document.getElementById("password");
+        var number = document.getElementById("number");
+        var confirm_password = document.getElementById("confirmpassword");
+              var form_ok =document.getElementById("form_ok");
+        function Submit() {
+            alert(" functioon call")
+            if (password.value == confirm_password.value) {
+
+                alert("password ok");
+                if (isNumeric(number.value) == true) {
+                    if (parseInt(number.value) > 999999999 && parseInt(number.value) <= 9999999999) {
+                       form_ok.innerHTML = 
+                       ` <div class="alert alert-primary" role="alert">
+                    form submited successfuly ......
+                    </div>`;
+                        console.log(number.value)
+                    }
+                    else
+                     {
+                        form_ok.innerHTML =
+                            ` <div class="alert alert-danger" role="alert">
+                    not  10 digit number ......
+                    </div>`;
+                        
+                    }
+                }
+                else 
+                {
+                   form_ok.innerHTML =
+                        ` <div class="alert alert-danger" role="alert">
+                    not number
+                    </div>`;
+
+                }
+            }
+            else
+            {
+                form_ok.innerHTML =
+                    ` <div class="alert alert-danger" role="alert">
+                    password not same ......
+                    </div>`;
+
+            }
+
+
+
+        }
+
+
+        function isNumeric(str) {
+            if (typeof str != "string") return false // we only process strings!  
+            return !isNaN(str) && // use type coercion to parse the _entirety_ of the string (`parseFloat` alone does not do this)...
+                !isNaN(parseFloat(str)) // ...and ensure strings of whitespace fail
+        }
+
+        var users = [
+            {
+                no: 1,
+                name: "user",
+                age: 18
+            },
+            {
+                no: 2,
+                name: "user",
+                age: 18
+            },
+            {
+                no: 3,
+                name: "user",
+                age: 18
+            },
+            {
+                no: 4,
+                name: "user",
+                age: 18
+            },
+            {
+                no: 5,
+                name: "user",
+                age: 18
+            },
+            {
+                no: 6,
+                name: "user",
+                age: 18
+            },
+            {
+                no: 7,
+                name: "user",
+                age: 18
+            },
+            {
+                no: 8,
+                name: "user",
+                age: 18
+            }
+        ]
+        users.map(function (user) {
+            document.getElementById("card_1").innerHTML += `<div class="col-3"><div class="card mt-3" style="width: 18rem;">
+  <img src="https://picsum.photos/300?${user.no}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">User ${user.no}</h5>
+    <p class="card-text"> No :${user.no} .</p>
+    <p class="card-text"> name :${user.name} ${user.no}.</p>
+    <p class="card-text"> age :${user.age} .</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div></div> 
+        `;
+        })
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
