@@ -95,7 +95,13 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
+<div class="container">
+    <div class="row">
+        <div class="col-12 my-5">
+            <h2 align="center">Users</h2>
+        </div>
+    </div>
+</div>
     <div class="container">
         <div class="row" id="card_1">
 
@@ -110,6 +116,7 @@
 
                 </div>
             </div>
+            <div class="col-12"><h1 align="center">User form</h1></div>
             <div class="col-8 offset-2">
 
                 <div class="card">
@@ -141,8 +148,8 @@
         </div>
     </div>
 
-    <footer>
-
+    <footer class="text-bg-secondary mt-5 p-5">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ipsa quod libero earum porro, rem, ab nobis provident, minima minus voluptate? Laudantium possimus non provident, nemo magni eum fuga perspiciatis.
     </footer>
 
     <script>
@@ -246,9 +253,9 @@
             }
         ]
         users.map(function (user) {
-            document.getElementById("card_1").innerHTML += `<div class="col-3"><div class="card mt-3" style="width: 18rem;">
-  <img src="https://picsum.photos/300?${user.no}" class="card-img-top" alt="...">
-  <div class="card-body">
+            document.getElementById("card_1").innerHTML += `<div class="col-12 col-lg-3 col-md-4 "><div class="card mt-3 border-0">
+  <img src="https://picsum.photos/200?${user.no}" class="  rounded-circle" alt="...">
+  <div class="card-body text-center">
     <h5 class="card-title">User ${user.no}</h5>
     <p class="card-text"> No :${user.no} .</p>
     <p class="card-text"> name :${user.name} ${user.no}.</p>
@@ -266,3 +273,6 @@
 </body>
 
 </html>
+
+
+
